@@ -1,0 +1,93 @@
+/* Privacy Policy Container */
+.unique-privacy-policy{
+    background-color: #111;
+}
+.unique-privacy-policy a{
+    color: #ff4a4a;
+}
+#unique-privacy-policy {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 74, 74, 0.2);
+  }
+  
+  .unique-privacy-policy {
+    background-color: #111;
+  }
+  
+  /* Title */
+  .unique-privacy-title {
+    text-align: center;
+    color: #ff4a4a;
+    margin-bottom: 20px;
+  }
+  
+  /* Effective Date */
+  .unique-effective-date {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  /* Policy Sections */
+  .unique-policy-section {
+    margin-bottom: 20px;
+  }
+  
+  .unique-policy-section h2 {
+    font-size: 22px;
+    color: #ff4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .unique-policy-section p,
+  .unique-policy-section li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* List Styling */
+  .unique-policy-section ul {
+    padding-left: 20px;
+  }
+  
+  /* Footer */
+  .unique-policy-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ff4a4a;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    #unique-privacy-policy {
+      padding: 15px;
+    }
+  
+    .unique-privacy-title {
+      font-size: 24px;
+    }
+  
+    .unique-policy-section h2 {
+      font-size: 20px;
+    }
+  
+    .unique-policy-section p,
+    .unique-policy-section li {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 480px) {
+    #unique-privacy-policy {
+      padding: 15px;
+      margin-top: 0;
+    }
+}
+  

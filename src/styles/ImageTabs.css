@@ -1,0 +1,140 @@
+.image-tabs {
+    background-color: black;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* Image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    overflow: hidden;
+}
+
+/* Responsive Image */
+.changing-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ff0050;
+    box-shadow: 0px 4px 15px rgba(255, 0, 80, 0.8);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    opacity: 0;
+    transform: scale(0.95) rotate(-2deg);
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* Fade-out effect */
+.fade-out {
+    opacity: 0;
+    transform: scale(0.9) rotate(-2deg);
+}
+
+/* Order Now Button */
+.order-now {
+    background-color: #ff0050;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: bounce 1.5s infinite;
+}
+
+.order-now:hover {
+    background-color: #d84343;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(255, 0, 80, 0.9);
+}
+
+/* Offer Section */
+.offer-section {
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    animation: bounce 2.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .image-container {
+        height: 600px;
+    }
+
+    .changing-image {
+        max-width: 600px;
+        max-height: 450px;
+    }
+
+    .order-now {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        height: 450px;
+    }
+
+    .changing-image {
+        max-width: 500px;
+        max-height: 350px;
+    }
+
+    .order-now {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .offer-section {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        height: 350px;
+    }
+
+    .changing-image {
+        max-width: 90%;
+        max-height: 300px;
+    }
+
+    .order-now {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .offer-section {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,211 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: black; /* Your brand color */
+  color: white;
+  position: relative;
+  top: 60px; /* Push navbar below rolling text */
+  z-index: 999;
+  width: auto;
+}
+
+/* Logo / Brand Name */
+.navbar h2 {
+  font-size: 1.8rem;
+  color: #ff4a4a;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ff4a4a; /* Hover effect */
+}
+
+/* Cart Icon */
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #ff4a4a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Cart Item Count */
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: white;
+  color: #ff4a4a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(255, 0, 80, 0.8);
+}
+#login{
+  border: 1px solid #ff4a4a;
+  padding: 3px;
+  border-radius: 5px;
+}
+#login:hover{
+  border: 1px solid white;
+  color: #ff4a4a;
+}
+
+/* User Dropdown Container */
+.user-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+/* Username Styling */
+.username {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ff4a4a;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: white;
+  color: #ff4a4a;
+  border: 1px solid #ff4a4a;
+}
+
+/* Login Link */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ff4a4a;
+}
+
+/* Hover Effects */
+.cart-link:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.cart-link:hover .cart-icon {
+  color: #ff4a4a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      /* flex-direction: column; */
+      padding: 1rem;
+      top: 10px;
+      text-align: center;
+  }
+
+  .nav-links {
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 10px;
+  }
+
+  .nav-link {
+      font-size: 1rem;
+  }
+
+  .cart-link {
+      width: 35px;
+      height: 35px;
+  }
+
+  .cart-icon {
+      font-size: 1.3rem;
+  }
+
+  .cart-count {
+      width: 18px;
+      height: 18px;
+      font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    top: 30px;
+  }
+  .navbar h2 {
+      font-size: 1.5rem;
+  }
+
+  .nav-links {
+      /* flex-direction: row; */
+      gap: 9px;
+  }
+
+  .nav-link {
+      font-size: 1rem;
+      padding: 1px 0;
+  }
+
+  .cart-link {
+      width: 30px;
+      height: 30px;
+  }
+
+  .cart-icon {
+      font-size: 1.2rem;
+  }
+
+  .cart-count {
+      width: 16px;
+      height: 16px;
+      font-size: 0.6rem;
+  }
+}

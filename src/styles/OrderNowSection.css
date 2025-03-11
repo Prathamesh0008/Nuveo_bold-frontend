@@ -1,0 +1,90 @@
+.order-now-section {
+    /* position: fixed; */
+    /* bottom: 20px; */
+    /* right: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  /* Order Now Button */
+  .order-now-btn {
+    background-color: #ff0050;/* Theme color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 22px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-now-btn:hover {
+    background-color: #d84343; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Image inside Button */
+  .booty {
+    width: 60px;
+    height: auto;
+    animation: shake 1.5s infinite;
+  }
+  
+  /* Limited Time Offer Banner */
+  .offer-banner {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    animation: pulse 2s infinite alternate;
+  }
+  
+  /* Button Animation */
+  @keyframes shake {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+  }
+  
+  /* Banner Animation */
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.1); opacity: 0.9; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .order-now-section {
+      bottom: 10px;
+      right: 10px;
+    }
+  
+    .order-now-btn {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+  
+    .booty {
+      width: 45px;
+    }
+  
+    .offer-banner {
+      font-size: 10px;
+      padding: 16px 12px;
+      
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.stacked-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 50px;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Initially, images are hidden and placed outside the viewport */
+.stacked-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+/* Move first image from left */
+.stacked-image.top {
+  transform: translateX(-100%);
+}
+
+/* Move second image from right */
+.stacked-image.bottom {
+  transform: translateX(100%);
+}
+
+/* When the component is visible, images slide in */
+.stacked-images-container.visible .stacked-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .stacked-images-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stacked-images-container {
+    padding: 20px;
+  }
+}

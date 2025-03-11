@@ -1,0 +1,128 @@
+#about-us{
+    background-color: black;
+}
+.about-us {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #ff0050;
+    margin-bottom: 0.5rem;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission, .vision {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    border: 2px solid #ff0050;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+}
+
+.our-values {
+    margin-top: 2rem;
+}
+
+.our-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.our-values li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.why-choose-us li {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.our-team {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.team-swiper {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+}
+
+.team-swiper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+    background: #ff0050 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ff0050 !important;
+}
+
+
+/* .team-image {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+} */
+
+.customer-support {
+    margin-top: 3rem;
+}
+
+.customer-support ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.customer-support li {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.closing-statement {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #ddd;
+}

@@ -1,0 +1,107 @@
+.image-comparisonn-slider {
+  background-color: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 550px; /* Default for desktops */
+  overflow: hidden;
+  user-select: none;
+  cursor: ew-resize;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+/* Responsive height for tablets */
+@media (max-width: 768px) {
+  .comparison-container {
+    height: 300px;
+    border-radius: 30px;
+  }
+}
+
+/* Responsive height for mobile */
+@media (max-width: 480px) {
+  .comparison-container {
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+
+/* Right Image (Full View) */
+.comparison-image.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Left Image (Dynamically Revealed by Slider) */
+.comparison-image.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.comparison-image.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slider Divider */
+.comparison-slider {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: white;
+  cursor: grab;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  z-index: 2;
+}
+
+/* Slider Handle with Arrows */
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Smaller handle for mobile */
+@media (max-width: 480px) {
+  .slider-handle {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+/* Arrow Styles */
+.arrow {
+  display: inline-block;
+  color: #000;
+}

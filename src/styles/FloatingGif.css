@@ -1,0 +1,16 @@
+.floatingg-gif {
+    position: fixed;
+    bottom: 1%;
+    left: 18%;
+    width: 150px; /* Adjust size */
+    height: auto;
+    z-index: 1000;
+    /* animation: float 3s ease-in-out infinite; */
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+  

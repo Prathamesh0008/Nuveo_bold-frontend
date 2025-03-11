@@ -1,0 +1,58 @@
+/* General Product Showcase Section */
+.product-showcase {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background: black;
+    color: white;
+    overflow: hidden;
+    
+  }
+  
+  /* Title */
+  .product-title {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Character Sitting on Title */
+  .character-image {
+    position: absolute;
+    width: 180px; /* Adjust based on the character size */
+    height: auto;
+    top: -30px; /* Adjust to make it look seated */
+    margin-top: 10px;
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .character-image {
+      width: 90px;
+      top: -50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .character-image {
+      width: 110px;
+      top: 10px;
+    }
+  }
+  

@@ -1,0 +1,76 @@
+.rolling-text-navbar {
+  width: 100%;
+  background: #ff0050;
+  color: black;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Marquee wrapper to ensure smooth scrolling */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+/* Actual text scrolling */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .rolling-text-navbar {
+      font-size: 0.9rem;
+      height: 35px;
+  }
+  .marquee {
+      animation-duration: 12s; /* Adjust speed for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .rolling-text-navbar {
+      font-size: 0.8rem;
+      height: 30px;
+  }
+  .marquee {
+      animation-duration: 10s;
+  }
+}
+
+@media (max-width: 480px) {
+  .rolling-text-navbar {
+      font-size: 0.75rem;
+      height: 28px;
+      padding: 8px 5px;
+  }
+  .marquee {
+      animation-duration: 8s;
+  }
+}

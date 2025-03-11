@@ -1,0 +1,111 @@
+.married-life-tips {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tips-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff0050;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tip-box {
+    background: #222;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: 2px solid #ff0050;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+}
+
+.tip-box:hover {
+    transform: scale(1.05);
+    background: #ff0050;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(255, 0, 80, 1);
+}
+
+.tip-box h3 {
+    font-size: 1.3rem;
+    color: #ff0050;
+    margin-bottom: 0.8rem;
+}
+
+.tip-box:hover h3 {
+    color: white;
+}
+
+.tip-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Stickers */
+.sticker {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sticker Hover Animation */
+.sticker:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Sticker Positions */
+.sticker-1 {
+    top: 2%;
+    left: 5%;
+    transform: rotate(-15deg);
+}
+
+.sticker-2 {
+    top: 15%;
+    right: 8%;
+    transform: rotate(10deg);
+}
+
+.sticker-3 {
+    bottom: 10%;
+    left: 5%;
+    transform: rotate(-10deg);
+}
+
+.sticker-4 {
+    bottom: 20%;
+    right: 15%;
+    transform: rotate(5deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sticker {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticker {
+        width: 50px;
+    }
+}

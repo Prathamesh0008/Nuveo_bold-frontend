@@ -1,0 +1,127 @@
+/* Contact Page Styling */
+.nuveo-contact {
+    background: #000;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .nuveo-contact-header {
+    margin-bottom: 2rem;
+  }
+  
+  .nuveo-contact-title {
+    font-size: 2.5rem;
+    color: #ff4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nuveo-contact-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Contact Container */
+  .nuveo-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Contact Info */
+  .nuveo-contact-info {
+    background: rgba(255, 74, 74, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .nuveo-contact-heading {
+    font-size: 1.5rem;
+    color: #ff4a4a;
+    margin-bottom: 1rem;
+  }
+  
+  .nuveo-contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nuveo-contact-item {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nuveo-contact-item svg {
+    color: #ff4a4a;
+  }
+  
+  /* Contact Form */
+  .nuveo-contact-form {
+    background: rgba(255, 74, 74, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 0, 80, 0.5);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .nuveo-form-heading {
+    font-size: 1.5rem;
+    color: #ff4a4a;
+    margin-bottom: 1rem;
+  }
+  
+  #nuveo-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nuveo-form-input,
+  .nuveo-form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff4a4a;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+  }
+  
+  .nuveo-form-button {
+    padding: 10px;
+    background: #ff4a4a;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nuveo-form-button:hover {
+    background: #e63c3c;
+  }
+  
+  /* Google Map */
+  .nuveo-map-container {
+    margin-top: 3rem;
+  }
+  
+  #nuveo-map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+  }
+  

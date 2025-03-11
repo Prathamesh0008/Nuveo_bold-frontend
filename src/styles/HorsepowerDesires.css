@@ -1,0 +1,120 @@
+/* General Section */
+.desires-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: black;
+    color: #ff4a4a;
+    overflow: hidden;
+  }
+  
+  /* Title & Description */
+  .desires-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff4a4a;
+  }
+  
+  .desires-description {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #fff;
+  }
+  
+  /* Scrolling Wrapper */
+  .scrolling-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Scrolling Content */
+  .scrolling-content {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: infinite-scroll 12s linear infinite;
+  }
+  
+  /* Individual Scroll Item */
+  .scroll-item {
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    background: rgba(255, 74, 74, 0.1); /* Subtle red tint */
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Image */
+  .scroll-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ff4a4a;
+  }
+  
+  /* Footer */
+  .desires-footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* Infinite Scroll Keyframes */
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .scrolling-wrapper {
+      justify-content: flex-start;
+    }
+  
+    .scrolling-content {
+      animation: infinite-scroll 15s linear infinite;
+      gap: 10px;
+    }
+  
+    .scroll-item {
+      width: 140px;
+      height: 220px;
+    }
+  
+    .scroll-image {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scrolling-wrapper {
+      justify-content: flex-start;
+    }
+  
+    .scrolling-content {
+      animation: infinite-scroll 18s linear infinite;
+      gap: 5px;
+    }
+  
+    .scroll-item {
+      width: 120px;
+      height: 200px;
+    }
+  
+    .scroll-image {
+      height: 160px;
+    }
+  }
+  

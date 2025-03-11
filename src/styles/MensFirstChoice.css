@@ -1,0 +1,62 @@
+.mens-choice {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0050; /* Red Accent */
+    margin-bottom: 1rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 180px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+    background: #ff0050;
+    box-shadow: 0px 0px 15px rgba(255, 0, 80, 0.8);
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 2.5rem;
+    color: #ff0050;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.feature:hover .icon {
+    color: white;
+}
+
+/* Text Styling */
+.feature p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.feature:hover p {
+    color: white;
+}

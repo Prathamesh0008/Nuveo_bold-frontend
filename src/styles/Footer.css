@@ -1,0 +1,121 @@
+/* Footer Container */
+.nuveo-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.nuveo-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Sections */
+.nuveo-footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.nuveo-footer-section h3 {
+    color: #ff4a4a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.nuveo-footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nuveo-footer-section ul li {
+    margin: 8px 0;
+}
+
+.nuveo-footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nuveo-footer-section ul li a:hover {
+    color: #ff4a4a;
+}
+
+/* Newsletter */
+.nuveo-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nuveo-newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nuveo-newsletter-form button {
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nuveo-newsletter-form button:hover {
+    background-color: #e03e3e;
+}
+
+/* Social & Payment Icons */
+.nuveo-footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nuveo-social-icons, .nuveo-payment-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.nuveo-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nuveo-icon:hover {
+    color: #ff4a4a;
+}
+
+/* Footer Text */
+.nuveo-footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nuveo-footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nuveo-footer-section {
+        text-align: center;
+    }
+}
